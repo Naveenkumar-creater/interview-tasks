@@ -26,7 +26,7 @@ function Login(props) {
   const handlesubmit = (e)=>{
     e.preventDefault()
     const arr={"email":email,"password":password}
-    axios.post("https://login-logout-apps.herokuapp.com/login",arr).then((res)=>{
+    axios.post("https://login-logout-apiss.herokuapp.com/login",arr).then((res)=>{
             console.log(res)
             if(true){
                 alert("sucessfully Logged in")
